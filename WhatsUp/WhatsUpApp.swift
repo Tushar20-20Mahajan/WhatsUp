@@ -4,7 +4,7 @@ import SwiftUI
 struct WhatsUpApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }
