@@ -10,6 +10,7 @@
 		3F4013C72C7DE8B50005841F /* WhatsUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4013C62C7DE8B50005841F /* WhatsUpApp.swift */; };
 		3F4013CB2C7DE8B60005841F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F4013CA2C7DE8B60005841F /* Assets.xcassets */; };
 		3F4013CE2C7DE8B60005841F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F4013CD2C7DE8B60005841F /* Preview Assets.xcassets */; };
+		3F48A7A72C81E19800887E60 /* CommunityTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F48A7A62C81E19800887E60 /* CommunityTabScreen.swift */; };
 		3F9D40EA2C7DEA030096E076 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D40E92C7DEA030096E076 /* MainTabView.swift */; };
 		3F9D40ED2C7DED3A0096E076 /* UpdatesTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D40EC2C7DED3A0096E076 /* UpdatesTabScreen.swift */; };
 		3FC680372C81C85D003B5C53 /* CallsTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC680362C81C85D003B5C53 /* CallsTabScreen.swift */; };
@@ -20,6 +21,7 @@
 		3F4013C62C7DE8B50005841F /* WhatsUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsUpApp.swift; sourceTree = "<group>"; };
 		3F4013CA2C7DE8B60005841F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F4013CD2C7DE8B60005841F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F48A7A62C81E19800887E60 /* CommunityTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommunityTabScreen.swift; path = WhatsUp/CommunityTabScreen.swift; sourceTree = SOURCE_ROOT; };
 		3F9D40E92C7DEA030096E076 /* MainTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		3F9D40EC2C7DED3A0096E076 /* UpdatesTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesTabScreen.swift; sourceTree = "<group>"; };
 		3FC680362C81C85D003B5C53 /* CallsTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsTabScreen.swift; sourceTree = "<group>"; };
@@ -55,10 +57,9 @@
 		3F4013C52C7DE8B50005841F /* WhatsUp */ = {
 			isa = PBXGroup;
 			children = (
+				3F48A79A2C81E05000887E60 /* Screens */,
 				3F4013C62C7DE8B50005841F /* WhatsUpApp.swift */,
 				3F9D40E92C7DEA030096E076 /* MainTabView.swift */,
-				3F9D40EC2C7DED3A0096E076 /* UpdatesTabScreen.swift */,
-				3FC680362C81C85D003B5C53 /* CallsTabScreen.swift */,
 				3F4013CA2C7DE8B60005841F /* Assets.xcassets */,
 				3F4013CC2C7DE8B60005841F /* Preview Content */,
 			);
@@ -71,6 +72,80 @@
 				3F4013CD2C7DE8B60005841F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3F48A79A2C81E05000887E60 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3F48A79B2C81E05700887E60 /* Updates */,
+				3F48A79D2C81E06E00887E60 /* Calls */,
+				3F48A7A12C81E0FE00887E60 /* Community */,
+				3F48A7A32C81E13600887E60 /* Channel */,
+				3F48A7A42C81E14500887E60 /* Settings */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3F48A79B2C81E05700887E60 /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				3F48A79C2C81E05F00887E60 /* Views */,
+			);
+			path = Updates;
+			sourceTree = "<group>";
+		};
+		3F48A79C2C81E05F00887E60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3F9D40EC2C7DED3A0096E076 /* UpdatesTabScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F48A79D2C81E06E00887E60 /* Calls */ = {
+			isa = PBXGroup;
+			children = (
+				3F48A79E2C81E07D00887E60 /* Views */,
+			);
+			path = Calls;
+			sourceTree = "<group>";
+		};
+		3F48A79E2C81E07D00887E60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FC680362C81C85D003B5C53 /* CallsTabScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F48A7A12C81E0FE00887E60 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				3F48A7A22C81E10700887E60 /* Views */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		3F48A7A22C81E10700887E60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3F48A7A62C81E19800887E60 /* CommunityTabScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F48A7A32C81E13600887E60 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		3F48A7A42C81E14500887E60 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +220,7 @@
 			files = (
 				3F9D40ED2C7DED3A0096E076 /* UpdatesTabScreen.swift in Sources */,
 				3FC680372C81C85D003B5C53 /* CallsTabScreen.swift in Sources */,
+				3F48A7A72C81E19800887E60 /* CommunityTabScreen.swift in Sources */,
 				3F4013C72C7DE8B50005841F /* WhatsUpApp.swift in Sources */,
 				3F9D40EA2C7DEA030096E076 /* MainTabView.swift in Sources */,
 			);
